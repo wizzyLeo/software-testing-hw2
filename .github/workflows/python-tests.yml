@@ -16,12 +16,5 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          # If your tests need any dependencies, install them here
-          # For example: pip install requests
-
       - name: Run unit tests
-        run: |
-          python -m unittest CalcTest.py
+        run: python -m unittest CalcTest.py
